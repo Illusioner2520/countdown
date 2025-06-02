@@ -1,0 +1,141 @@
+{
+    "days_off": [
+        "Aug 11, 2025",
+        "Sep 1, 2025",
+        "Sep 2, 2025",
+        "Sep 29, 2025",
+        "Oct 13, 2025",
+        "Oct 14, 2025",
+        "Oct 15, 2025",
+        "Oct 16, 2025",
+        "Oct 17, 2025",
+        "Nov 3, 2025",
+        "Nov 24, 2025",
+        "Nov 25, 2025",
+        "Nov 26, 2025",
+        "Nov 27, 2025",
+        "Nov 28, 2025",
+        "Dec 19, 2025",
+        "Dec 22, 2025",
+        "Dec 23, 2025",
+        "Dec 24, 2025",
+        "Dec 25, 2025",
+        "Dec 26, 2025",
+        "Dec 29, 2025",
+        "Dec 30, 2025",
+        "Dec 31, 2025",
+        "Jan 1, 2026",
+        "Jan 2, 2026",
+        "Jan 5, 2026",
+        "Jan 19, 2026",
+        "Feb 16, 2026",
+        "Feb 17, 2026",
+        "Mar 9, 2026",
+        "Mar 23, 2026",
+        "Mar 24, 2026",
+        "Mar 25, 2026",
+        "Mar 26, 2026",
+        "Mar 27, 2026",
+        "Apr 13, 2026",
+        "May 4, 2026"
+    ],
+    "important_days": {
+        "first_day": "Aug 11, 2025",
+        "quarter": ["Oct 10, 2025", "Dec 18, 2025", "Mar 13, 2026", "May 21, 2026"],
+        "semester": ["Dec 18, 2025", "May 21, 2026"],
+        "year": ["May 21, 2026"],
+        "last_day": "May 21, 2026"
+    },
+    "grades": [
+        "Freshman",
+        "Sophomore",
+        "Junior",
+        "Senior"
+    ],
+    "grade_overrides": {
+        "Freshman": {
+            "remove_off": [
+                "Aug 11, 2025",
+                "Apr 13, 2026",
+                "May 4, 2026"
+            ],
+            "add_off": [
+                "Apr 15, 2026",
+                "May 7, 2026"
+            ]
+        },
+        "Sophomore": {
+            "remove_off": [
+                "Apr 13, 2026",
+                "May 4, 2026"
+            ],
+            "add_off": [
+                "Apr 16, 2026",
+                "May 7, 2026"
+            ]
+        },
+        "Junior": {
+            "remove_off": [
+                "Apr 13, 2026",
+                "May 4, 2026"
+            ],
+            "add_off": [
+                "May 7, 2026"
+            ]
+        },
+        "Senior": {
+            "remove_off": [
+                "Apr 13, 2026"
+            ],
+            "add_off": [
+                "Apr 15, 2026",
+                "Apr 16, 2026",
+                "Apr 30, 2026",
+                "May 1, 2026",
+                "May 5, 2026",
+                "May 6, 2026",
+                "May 7, 2026",
+                "May 8, 2026",
+                "May 11, 2026",
+                "May 12, 2026",
+                "May 13, 2026",
+                "May 14, 2026",
+                "May 15, 2026",
+                "May 18, 2026",
+                "May 19, 2026",
+                "May 20, 2026",
+                "May 21, 2026"
+            ]
+        }
+    },
+    "enable_defaults": [
+        "year",
+        "semester",
+        "quarter",
+        "day_off",
+        "custom"
+    ],
+    "days_in_school": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+    ],
+    "name": "Horizon High School",
+    "id": "horizon",
+    "location": {
+        "city": "Thornton",
+        "state": "CO",
+        "district": "Adams 12 Five Star Schools"
+    },
+    "maintainer": "Scott",
+    "texts": {
+        "year": "Year",
+        "semester": "Semester",
+        "quarter": "Quarter",
+        "day_off": "Next Day Off",
+        "custom": "Custom"
+    },
+    "time_to_count_down": 12
+}
