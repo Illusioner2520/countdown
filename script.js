@@ -414,6 +414,13 @@ class Calendar {
         });
         if (document.querySelector(`[data-date="${date.toString()}"]`)) document.querySelector(`[data-date="${date.toString()}"]`).classList.add("emphasized");
     }
+    unEmphasize() {
+        this.emphasizeddate = null;
+
+        [...document.getElementsByClassName("emphasized")].forEach((e) => {
+            e.classList.remove("emphasized");
+        });
+    }
     nextMonth() {
         this.month += 1;
         if (this.month == 12) {
@@ -433,6 +440,20 @@ class Calendar {
 }
 
 let dayclick = (e) => {
+    if (localStorage.customDate == e.currentTarget.getAttribute("data-date")) {
+        calendar.unEmphasize();
+        delete localStorage.customDate;
+        let options = days.optlist;
+        options.forEach((e) => {
+            if (e.value == "custom") {
+                e.desc = "Select a date on the calendar";
+            }
+        });
+        let value = days.getValue();
+        days.setOptions(options, value);
+        changeDay(value);
+        return;
+    }
     localStorage.customDate = e.currentTarget.getAttribute("data-date");
     let day = new Date(localStorage.customDate);
     calendar.setEmphasized(day);
@@ -529,7 +550,7 @@ function changeGrade(value) {
                 }
             }
         }
-        if (def == "custom" && !localStorage.customDate) desc = "Select a date on the calendar to count down to";
+        if (def == "custom" && !localStorage.customDate) desc = "Select a date on the calendar";
         if (def == "custom" && localStorage.customDate) desc = format(new Date(localStorage.customDate));
         daysDropdownInfo.push({
             "title": information.texts && information.texts[def] ? information.texts[def] : defaultTexts[def] ?? "Error",

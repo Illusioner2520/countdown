@@ -10,8 +10,9 @@ body {
 .number-box {
     background-color: #09090b;
     color: white;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
     position: relative;
     flex: 1;
     font-family: "Manrope", monospace;
@@ -23,7 +24,6 @@ body {
 }
 
 .number {
-    margin-bottom: auto;
     display: flex;
 }
 
@@ -656,6 +656,7 @@ button {
     justify-content:center;
     overflow-x: auto;
     flex-wrap: wrap;
+    margin-top: auto;
 }
 
 .weekday-countdown {
